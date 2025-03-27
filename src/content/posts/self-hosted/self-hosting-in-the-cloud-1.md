@@ -6,7 +6,7 @@ description: 'using cloud services to run your own applications ("self-managing"
 image: './covers/image1.png'
 tags: [self-hosting,self-managed ]
 category: 'Self Hosting'
-draft: true
+draft: false
 ---
 
 > Cover image source: [lexica.art](https://lexica.art/prompt/1d46662b-7dc3-4b52-9e39-32433f94161e)
