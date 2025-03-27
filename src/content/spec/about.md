@@ -1,9 +1,19 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
 
-::github{repo="saicaca/fuwari"}
+I like to write about things I like :).
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+if you find any issue or have any suggestion, please feel free to open an issue on [GitHub](https://github.com/MasterBrian99/blog). 
+
+
+::github{repo="MasterBrian99/blog"}
+
+## Contact Me
+- [mail@pasindupramodya.com](mailto:mail@pasindupramodya.com)
+- [Mastodon](https://fosstodon.org/@masterbr1an)
+
+## Other Links
+- [Personal Website](https://pasindupramodya.com/)
+- [Social Links](https://link.pasindupramodya.com/)
+- [GitHub](https://github.com/MasterBrian99)
+- [LinkedIn](https://www.linkedin.com/in/pasindu-p-konghawaththa-3808861a0/)
+- [Blog](https://blog.pasindupramodya.com/)
