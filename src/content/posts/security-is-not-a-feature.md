@@ -1,11 +1,11 @@
 ---
 title: "Security Is Not a Feature. It's a Way of Thinking."
-published: 2026-04-15
-updated: 2026-04-15
+published: 2026-04-12
+updated: 2026-04-12
 description: "Security is not a feature. It's a way of thinking."
 tags: [Security,Privacy]
 image: "../../assets/images/post-covers/security-is-not-a-feature.png"
-category: 'Programming'
+category: 'Security'
 draft: false 
 ---
 
