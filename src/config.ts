@@ -17,12 +17,12 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "assets/images/cover-banner.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "assets/images/cover-banner.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: true, // Display the credit text of the banner image
-			text: "A0 @AIArt", // Credit text to be displayed
-			url: "https://www.pixiv.net/en/artworks/112977173", // (Optional) URL link to the original artwork or artist's page
+			text: "furukawa rikka", // Credit text to be displayed
+			url: "https://www.pixiv.net/en/artworks/117904701", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	toc: {
@@ -75,7 +75,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Pasindu Pramodya",
-	bio: "C++ : Where friends have access to your private members.",
+	bio: "What doesn’t kill you gives you a set of unhealthy coping mechanisms and a dark sense of humor.",
 	links: [
 		{
 			name: "Twitter",
