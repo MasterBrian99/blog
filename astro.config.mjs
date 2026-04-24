@@ -101,7 +101,7 @@ export default defineConfig({
 			},
 		}),
 		svelte(),
-		sitemap(),
+		sitemap({}),
 	],
 	markdown: {
 		remarkPlugins: [
