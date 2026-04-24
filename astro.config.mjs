@@ -24,9 +24,33 @@ import { parseDirectiveNode } from "./src/plugins/remark-directive-rehype.js";
 import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
+const site = "https://blog.pasindupramodya.com";
+
+function getSitemapMetadata(url) {
+	const { pathname } = new URL(url);
+
+	if (pathname === "/") {
+		return { changefreq: "daily", priority: 1 };
+	}
+
+	if (pathname.startsWith("/posts/")) {
+		return { changefreq: "weekly", priority: 0.9 };
+	}
+
+	if (pathname === "/archive/") {
+		return { changefreq: "weekly", priority: 0.7 };
+	}
+
+	if (pathname === "/about/") {
+		return { changefreq: "monthly", priority: 0.5 };
+	}
+
+	return { changefreq: "monthly", priority: 0.4 };
+}
+
 // https://astro.build/config
 export default defineConfig({
-	site: "https://blog.pasindupramodya.com/",
+	site,
 	base: "/",
 	trailingSlash: "always",
 	integrations: [
@@ -101,7 +125,26 @@ export default defineConfig({
 			},
 		}),
 		svelte(),
-		sitemap({}),
+		sitemap({
+			filter: (page) => {
+				const { pathname } = new URL(page);
+				return (
+					!pathname.startsWith("/_astro/") &&
+					!pathname.startsWith("/pagefind/") &&
+					pathname !== "/404/" &&
+					pathname !== "/500/"
+				);
+			},
+			serialize: (item) => ({
+				...item,
+				...getSitemapMetadata(item.url),
+			}),
+			namespaces: {
+				news: false,
+				xhtml: false,
+				video: false,
+			},
+		}),
 	],
 	markdown: {
 		remarkPlugins: [
